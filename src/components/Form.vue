@@ -59,9 +59,6 @@ export default {
           this.userData = {}
         })
       this.$store.dispatch('saveChild', this.childrens)
-        .then(() => {
-          this.childrensData = {}
-        })
     },
     addChild () {
       this.$store.dispatch('addChild', {
